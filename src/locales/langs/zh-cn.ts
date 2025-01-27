@@ -226,7 +226,12 @@ const local: App.I18n.Schema = {
     plugin_tables_vtable: 'VTable',
     nginx: 'Nginx',
     nginx_domain: '域名配置',
-    nginx_upstream: '上游服务器'
+    nginx_upstream: '上游服务器',
+    workflow: '工作流',
+    workflow_crontab: '定时任务',
+    workflow_template: '模板管理',
+    workflow_record: '执行记录',
+    workflow_details: '任务详情'
   },
   page: {
     login: {
@@ -486,16 +491,6 @@ const local: App.I18n.Schema = {
           iconify: 'iconify图标',
           local: '本地图标'
         }
-      }
-    },
-    nginx: {
-      domain: {
-        title: '域名配置',
-        domainName: '域名'
-      },
-      upstream: {
-        title: '上游服务器',
-        upstreamName: '上游服务器名称'
       }
     }
   },

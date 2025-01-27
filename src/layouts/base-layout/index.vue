@@ -6,7 +6,7 @@ import { useAppStore } from '@/store/modules/app';
 import { useThemeStore } from '@/store/modules/theme';
 import GlobalHeader from '../modules/global-header/index.vue';
 import GlobalSider from '../modules/global-sider/index.vue';
-// import GlobalTab from '../modules/global-tab/index.vue';
+import GlobalTab from '../modules/global-tab/index.vue';
 import GlobalContent from '../modules/global-content/index.vue';
 // import GlobalFooter from '../modules/global-footer/index.vue';
 import ThemeDrawer from '../modules/theme-drawer/index.vue';
@@ -127,12 +127,10 @@ function getSiderCollapsedWidth() {
     <template #header>
       <GlobalHeader v-bind="headerProps" />
     </template>
-
-    <!--
- <template #tab>
+    <template #tab>
       <GlobalTab />
     </template>
--->
+
     <!-- tab 注释掉就不会保留之前的标签页面 -->
     <template #sider>
       <GlobalSider />

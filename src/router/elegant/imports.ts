@@ -61,4 +61,8 @@ export const views: Record<LastLevelRouteKey, RouteComponent | (() => Promise<Ro
   plugin_typeit: () => import("@/views/plugin/typeit/index.vue"),
   plugin_video: () => import("@/views/plugin/video/index.vue"),
   "user-center": () => import("@/views/user-center/index.vue"),
+  workflow_crontab: () => import("@/views/workflow/crontab/index.vue"),
+  workflow_details: () => import("@/views/workflow/details/index.vue"),
+  workflow_record: () => import("@/views/workflow/record/index.vue"),
+  workflow_template: () => import("@/views/workflow/template/index.vue"),
 };

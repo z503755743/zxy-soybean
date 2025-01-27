@@ -664,5 +664,55 @@ export const generatedRoutes: GeneratedRoute[] = [
       i18nKey: 'route.user-center',
       hideInMenu: true
     }
+  },
+  {
+    name: 'workflow',
+    path: '/workflow',
+    component: 'layout.base',
+    meta: {
+      title: 'workflow',
+      i18nKey: 'route.workflow',
+      order: 11,
+      icon: 'mdi:clipboard-text-outline'
+    },
+    children: [
+      {
+        name: 'workflow_crontab',
+        path: '/workflow/crontab',
+        component: 'view.workflow_crontab',
+        meta: {
+          title: 'workflow_crontab',
+          i18nKey: 'route.workflow_crontab'
+        }
+      },
+      {
+        name: 'workflow_details',
+        path: '/workflow/details',
+        component: 'view.workflow_details',
+        meta: {
+          title: 'workflow_details',
+          i18nKey: 'route.workflow_details',
+          hideInMenu: true
+        }
+      },
+      {
+        name: 'workflow_record',
+        path: '/workflow/record',
+        component: 'view.workflow_record',
+        meta: {
+          title: 'workflow_record',
+          i18nKey: 'route.workflow_record'
+        }
+      },
+      {
+        name: 'workflow_template',
+        path: '/workflow/template',
+        component: 'view.workflow_template',
+        meta: {
+          title: 'workflow_template',
+          i18nKey: 'route.workflow_template'
+        }
+      }
+    ]
   }
 ];

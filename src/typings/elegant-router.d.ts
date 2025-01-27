@@ -90,6 +90,11 @@ declare module "@elegant-router/types" {
     "plugin_typeit": "/plugin/typeit";
     "plugin_video": "/plugin/video";
     "user-center": "/user-center";
+    "workflow": "/workflow";
+    "workflow_crontab": "/workflow/crontab";
+    "workflow_details": "/workflow/details";
+    "workflow_record": "/workflow/record";
+    "workflow_template": "/workflow/template";
   };
 
   /**
@@ -148,6 +153,7 @@ declare module "@elegant-router/types" {
     | "nginx"
     | "plugin"
     | "user-center"
+    | "workflow"
   >;
 
   /**
@@ -212,6 +218,10 @@ declare module "@elegant-router/types" {
     | "plugin_typeit"
     | "plugin_video"
     | "user-center"
+    | "workflow_crontab"
+    | "workflow_details"
+    | "workflow_record"
+    | "workflow_template"
   >;
 
   /**
